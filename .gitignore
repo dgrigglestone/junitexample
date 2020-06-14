@@ -1,0 +1,8 @@
+
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/org.dg/junitexample/pom.properties
+target/classes/META-INF/maven/org.dg/junitexample/pom.xml
+target/classes/org/dg/junitexample/Country.class
+target/test-classes/org/dg/junitexample/AbstractTestCountriesResource.class
+target/test-classes/org/dg/junitexample/TestCountriesResourceUsingJerseyClient.class
+target/test-classes/org/dg/junitexample/TestCountriesResourceUsingRESTassured.class
