@@ -14,7 +14,7 @@ import io.restassured.response.ResponseBody;
 public class TestCountriesResourceUsingRESTassured extends AbstractTestCountriesResource {
     
     @Override
-    public Country[] getAllCountries() {
+    protected Country[] getAllCountries() {
 
         Response response = when().get(AbstractTestCountriesResource.COUNTRIES_PATH);
         ResponseBody<?> responseBody = response.getBody();
@@ -25,7 +25,7 @@ public class TestCountriesResourceUsingRESTassured extends AbstractTestCountries
     }
 
     @Override
-    public Country getCountryForValidId(int countryId) {
+    protected Country getCountryForValidId(int countryId) {
         
         Response response = when().get(AbstractTestCountriesResource.COUNTRIES_PATH + "/" + countryId);
         ResponseBody<?> responseBody = response.getBody();

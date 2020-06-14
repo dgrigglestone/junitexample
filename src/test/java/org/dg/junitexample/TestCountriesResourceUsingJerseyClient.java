@@ -39,7 +39,7 @@ public class TestCountriesResourceUsingJerseyClient extends AbstractTestCountrie
     }
     
     @Override
-    public Country[] getAllCountries() throws IOException {
+    protected Country[] getAllCountries() throws IOException {
 
         WebResource webResource = client.resource(HOST_SOURCE + AbstractTestCountriesResource.COUNTRIES_PATH);
         
@@ -52,7 +52,7 @@ public class TestCountriesResourceUsingJerseyClient extends AbstractTestCountrie
     }
 
     @Override
-    public Country getCountryForValidId(int countryId) {
+    protected Country getCountryForValidId(int countryId) {
         
         WebResource webResource = client.resource(HOST_SOURCE + AbstractTestCountriesResource.COUNTRIES_PATH + "/" + countryId);
         
@@ -72,7 +72,7 @@ public class TestCountriesResourceUsingJerseyClient extends AbstractTestCountrie
     }
 
     @Override
-    public void getCountryForUnknownId(int countryId) {
+    protected void getCountryForUnknownId(int countryId) {
         
         WebResource webResource = client.resource(HOST_SOURCE + AbstractTestCountriesResource.COUNTRIES_PATH + "/" + countryId);
         
