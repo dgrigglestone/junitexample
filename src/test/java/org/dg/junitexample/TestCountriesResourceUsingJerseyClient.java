@@ -14,9 +14,6 @@ import com.sun.jersey.api.client.WebResource;
 
 /**
  * Tests the countries resource using the Jersey client API.
- * 
- * Note: In order for REST-assured to deserialize JSON bodies, a JSON deserializer such as
- *       Jackson must be on the classpath.
  */
 public class TestCountriesResourceUsingJerseyClient extends AbstractTestCountriesResource {
     

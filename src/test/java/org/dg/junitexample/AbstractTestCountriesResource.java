@@ -10,6 +10,13 @@ import com.sun.jersey.api.client.ClientResponse;
 
 import io.restassured.response.Response;
 
+/**
+ * This abstract class is provided as a base test class for JUnit tests implemented using different REST test clients
+ * (namely REST-assured and Jersey client).
+ *
+ * The test cases are implemented as concrete methods in this base class, with superclasses expected to provide
+ * concrete implementations of utility methods (such as getAllCountries()) that perform the actual RESTful calls.
+ */
 public abstract class AbstractTestCountriesResource {
 
     public static final String COUNTRIES_PATH = "/JAXRSJsonExample/rest/countries";
